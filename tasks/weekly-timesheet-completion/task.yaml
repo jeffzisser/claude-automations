@@ -1,0 +1,36 @@
+name: "Weekly timesheet completion"
+schedule: "CRON_TZ=America/Chicago 0 16 * * 4,5"
+enabled: true
+starts_fresh_session_each_run: true
+approval: "auto"
+model: "account default"
+requires_local_computer: true
+folders:
+  - "/Users/jzisser/Documents/Claude/Projects/XPS Time Tracking"
+connectors_referenced_in_prompt:
+  - "Gmail"
+  - "Google_Calendar"
+  - "myintervals (local MCP on the Mac)"
+connectors_attached_on_source_account:
+  - "Canva"
+  - "Claude_Code_Remote"
+  - "Claude_Docs"
+  - "Gmail"
+  - "Google_Calendar"
+  - "Google_Drive"
+  - "HCC_Reporting_MCP"
+  - "Home_Assistant_-_Zisser"
+  - "HubSpot"
+  - "Mermaid_Chart"
+  - "Slack"
+  - "Spotify"
+  - "ZohoMCP-Desk"
+  - "ZohoMCP-Sprints"
+local_paths_in_prompt:
+  - "/Users/jzisser/Documents/Claude/Projects/XPS Time Tracking/reviews/weekly-"
+  - "/Users/jzisser/Documents/Claude/Projects/XPS Time Tracking/timetracking-rules.md"
+source:
+  task_id: "trig_01EQjLeMPjwjL2cKH8vzXcgF"
+  created_at: "2026-09-30T18:17:27.273889Z"
+  updated_at: "2026-09-30T18:17:27.273889Z"
+  exported_at: "2026-10-09"

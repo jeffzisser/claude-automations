@@ -1,0 +1,36 @@
+name: "Quarterly self review"
+schedule: "CRON_TZ=America/Chicago 0 8 1 1,4,7,10 *"
+enabled: true
+starts_fresh_session_each_run: true
+approval: "auto"
+model: "account default"
+requires_local_computer: true
+folders:
+  - "/Users/jzisser/Documents/Claude/Projects/Daily Briefing"
+connectors_referenced_in_prompt:
+  - "Slack"
+connectors_attached_on_source_account:
+  - "Canva"
+  - "Claude_Code_Remote"
+  - "Claude_Docs"
+  - "Gmail"
+  - "Google_Calendar"
+  - "Google_Drive"
+  - "HCC_Reporting_MCP"
+  - "Home_Assistant_-_Zisser"
+  - "HubSpot"
+  - "Mermaid_Chart"
+  - "Slack"
+  - "Spotify"
+  - "ZohoMCP-Desk"
+  - "ZohoMCP-Sprints"
+local_paths_in_prompt:
+  - "/Users/jzisser/Documents/Claude/Projects/Daily Briefing/accomplishments-log.md"
+  - "/Users/jzisser/Documents/Claude/Projects/Daily Briefing/activity-ledger.json"
+  - "/Users/jzisser/Documents/Claude/Projects/Daily Briefing/self-review-<YYYY>-Q<x>.docx"
+  - "/Users/jzisser/Library/Application Support/Claude/local-agent-mode-sessions/e98744aa-9b43-4aaf-ae88-f6611fef0ac3/b621c73a-e5d3-41e4-9703-c0eea54821b8/spaces/34ee3f9b-97f1-4bb1-931c-7dfb4a3f4826/memory/MEMORY.md"
+source:
+  task_id: "trig_01LHKBkBF9MPKGmk1BS7XqtY"
+  created_at: "2026-10-07T02:20:24.439860Z"
+  updated_at: "2026-10-07T02:20:24.439860Z"
+  exported_at: "2026-10-09"

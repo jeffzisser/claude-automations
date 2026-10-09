@@ -1,0 +1,36 @@
+name: "Workstream pm check"
+schedule: "CRON_TZ=America/Chicago 30 6 * * 1-5"
+enabled: true
+starts_fresh_session_each_run: true
+approval: "default (asks before acting)"
+model: "account default"
+requires_local_computer: true
+folders: []
+connectors_referenced_in_prompt:
+  - "Slack"
+  - "Google_Calendar"
+  - "Google_Drive"
+  - "Asana"
+connectors_attached_on_source_account:
+  - "Asana"
+  - "Canva"
+  - "Claude_Code_Remote"
+  - "Gmail"
+  - "Google_Calendar"
+  - "Google_Drive"
+  - "HCC_Reporting_MCP"
+  - "Home_Assistant_-_Zisser"
+  - "HubSpot"
+  - "Lucid"
+  - "Mermaid_Chart"
+  - "Slack"
+  - "ZohoMCP-Desk"
+  - "ZohoMCP-Sprints"
+local_paths_in_prompt:
+  - "/Users/jzisser/Documents/Claude/Projects/Workstream PM/check-<YYYY-MM-DD>.md"
+  - "/Users/jzisser/Library/Application Support/Claude/local-agent-mode-sessions/e98744aa-9b43-4aaf-ae88-f6611fef0ac3/b621c73a-e5d3-41e4-9703-c0eea54821b8/spaces/34ee3f9b-97f1-4bb1-931c-7dfb4a3f4826/memory/MEMORY.md"
+source:
+  task_id: "trig_019n4afoBDutBCYGtiG2k5ot"
+  created_at: "2026-09-14T19:41:09.484364Z"
+  updated_at: "2026-09-23T11:53:47.472098Z"
+  exported_at: "2026-10-09"
